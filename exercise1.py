@@ -12,19 +12,20 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+# Calculating the amount paid for share, including commission
 money = 2000
 share_value = 900.00
 money_paid = money * share_value
 buy_commission = 0.03 * money_paid
 total_money_paid = money_paid + buy_commission
 
-
+# Calculating the amount of money received from selling shares less the commission
 share_sold_total = money * 942.75
 sold_commission = share_sold_total * 0.03
-#money_left = share_sold_total - money_paid - sold_commission - buy_commission
-total_money_recieved = share_sold_total - sold_commission
+total_money_received = share_sold_total - sold_commission
 
-money_left = total_money_recieved - total_money_paid
+# Calculating the amount of money left
+money_left = total_money_received - total_money_paid
 
 if money_left > 0:
     print('Lakshmi made a profit of ' + money_left)
@@ -33,7 +34,6 @@ elif money_left < 0:
     loss = money_left * -1
     print('Lakshmi made a loss of ' + str(loss))
 else:
-    print('Lakshmi neither made a profit nor a loss')
-
+    print('Lakshmi neither made a profit nor a loss.')
 
 
