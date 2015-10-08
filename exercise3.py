@@ -28,30 +28,38 @@ def diagnose_car():
 
     answer = raw_input("Is the car silent when you turn the key? ")
 
-    if answer == "Y":
+    if answer == "y":
         answer = raw_input("Are the battery terminals corroded? ")
-        if answer == "Y":
+        if answer == "y":
             print("Clean terminals and try starting again.")
-        if answer == "N":
+        if answer == "n":
             print("Replace cables and try again.")
-    elif answer == "N":
+        else:
+            print("Please input y/n answer only.")
+    if answer == "n":
         answer = raw_input("Does the car make a clicking noise? ")
-        if answer == "Y":
+        if answer == "y":
             print("Replace the battery.")
-        elif answer == "N":
+        if answer == "n":
             answer = raw_input("Does the car crank up but fail to start? ")
-            if answer == "Y":
+            if answer == "y":
                 print("Check spark plug connections.")
-            elif answer == "N":
+            if answer == "n":
                 answer = raw_input("Does the engine start and then die? ")
-                if answer == "Y":
+                if answer == "y":
                     answer = raw_input("Does your car have fuel injection? ")
-                    if answer == "Y":
+                    if answer == "y":
                         print("Get it in for service.")
-                    elif answer == "N":
+                    if answer == "n":
                         print("Check to ensure the choke is opening and closing.")
-                elif answer == "N":
+                    else:
+                        print("Please input y/n answer only.")
+                if answer == "n":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
+# Add error message when input is not y/n
+                    Ad
 
-# diagnose_car()
+    return
+
+diagnose_car()
