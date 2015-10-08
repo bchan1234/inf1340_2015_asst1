@@ -12,6 +12,8 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+# Defining the function for determining the sides of the shape
+
 
 def name_that_shape():
     """
@@ -24,27 +26,27 @@ def name_that_shape():
     Errors: if input is anything else, display "Error"
 
     """
-    sides = input("Number of sides in a regular polygon: ")
+
+    sides = int(raw_input("Number of sides in a regular polygon: "))
 
     if sides == 3:
-        print("Triangle")
+        print("triangle")
     elif sides == 4:
-        print("Quadrilateral")
+        print("quadrilateral")
     elif sides == 5:
-        print("Pentagon")
+        print("pentagon")
     elif sides == 6:
-        print("Hexagon")
+        print("hexagon")
     elif sides == 7:
-        print("Heptagon")
+        print("heptagon")
     elif sides == 8:
-        print("Octagon")
+        print("octagon")
     elif sides == 9:
-        print("Nonagon")
+        print("nonagon")
     elif sides == 10:
-        print("Decagon")
+        print("decagon")
     else:
         print("Error")
 
 
-
-#name_that_shape()
+# name_that_shape()
