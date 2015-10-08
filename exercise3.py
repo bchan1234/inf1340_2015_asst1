@@ -26,40 +26,31 @@ def diagnose_car():
 
     """
 
-    answer = raw_input("Is the car silent when you turn the key? ")
+    user_input = raw_input("Is the car silent when you turn the key?")
+    if user_input == "y":
+        user_input = raw_input("Are the battery terminals corroded?")
+        if user_input == "y":
+            print("Clean terminals and try starting again")
+        elif user_input == "n":
+             print("Replace cables and try again ")
+    elif user_input == "n":
+        user_input = raw_input("Does the car make a clicking noise?")
+        if user_input == "y":
+            print("Replace the battery ")
+        elif user_input == "n":
+            user_input = raw_input("Does the car crank up but fail to start? ")
+            if user_input == "y":
+                print("Check spark plug connection")
+            elif user_input == "n":
+                user_input = raw_input("Does the engine start and then die")
+                if user_input == "y":
+                    user_input = raw_input("Does your car have fuel injection")
+                    if user_input == "n":
+                        print("Check to ensure the choke is opening or closing")
+                    elif user_input == "y":
+                        print("Get it in for service")
 
-    if answer == "y":
-        answer = raw_input("Are the battery terminals corroded? ")
-        if answer == "y":
-            print("Clean terminals and try starting again.")
-        if answer == "n":
-            print("Replace cables and try again.")
-        else:
-            print("Please input y/n answer only.")
-    if answer == "n":
-        answer = raw_input("Does the car make a clicking noise? ")
-        if answer == "y":
-            print("Replace the battery.")
-        if answer == "n":
-            answer = raw_input("Does the car crank up but fail to start? ")
-            if answer == "y":
-                print("Check spark plug connections.")
-            if answer == "n":
-                answer = raw_input("Does the engine start and then die? ")
-                if answer == "y":
-                    answer = raw_input("Does your car have fuel injection? ")
-                    if answer == "y":
-                        print("Get it in for service.")
-                    if answer == "n":
-                        print("Check to ensure the choke is opening and closing.")
-                    else:
-                        print("Please input y/n answer only.")
-                if answer == "n":
-                    print("Engine is not getting enough fuel. Clean fuel pump.")
 
-# Add error message when input is not y/n
-                    Ad
 
-    return
 
 diagnose_car()
