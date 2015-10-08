@@ -28,37 +28,44 @@ def diagnose_car():
 
     answer = raw_input("Is the car silent when you turn the key? ")
 
-    if answer == "y":
+    if answer == "Y":
         answer = raw_input("Are the battery terminals corroded? ")
-        if answer == "y":
+        if answer == "Y":
             print("Clean terminals and try starting again.")
-        if answer == "n":
+        elif answer == "N":
             print("Replace cables and try again.")
         else:
             print("Please input y/n answer only.")
-    if answer == "n":
+    elif answer == "N":
         answer = raw_input("Does the car make a clicking noise? ")
-        if answer == "y":
+        if answer == "Y":
             print("Replace the battery.")
-        if answer == "n":
+        elif answer == "N":
             answer = raw_input("Does the car crank up but fail to start? ")
-            if answer == "y":
+            if answer == "Y":
                 print("Check spark plug connections.")
-            if answer == "n":
+            elif answer == "N":
                 answer = raw_input("Does the engine start and then die? ")
-                if answer == "y":
+                if answer == "Y":
                     answer = raw_input("Does your car have fuel injection? ")
-                    if answer == "y":
+                    if answer == "Y":
                         print("Get it in for service.")
-                    if answer == "n":
+                    elif answer == "N":
                         print("Check to ensure the choke is opening and closing.")
                     else:
                         print("Please input y/n answer only.")
-                if answer == "n":
+                elif answer == "N":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
-# Add error message when input is not y/n
-                    Ad
+# Display error message when entering answers that are neither y or n
+                else:
+                    print("Please input y/n answer only.")
+            else:
+                print("Please input y/n answer only.")
+        else:
+            print("Please input y/n answer only.")
+    else:
+        print("Please input y/n answer only.")
 
     return
 
