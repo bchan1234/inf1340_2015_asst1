@@ -26,9 +26,10 @@ def name_that_shape():
     Errors: if input is anything else, display "Error"
 
     """
-
+# Prompt the user to enter number of sides as an integer
     sides = int(raw_input("Number of sides in a regular polygon: "))
 
+# The output for each integer ranging from 3 - 10 inclusively
     if sides == 3:
         print("triangle")
     elif sides == 4:
@@ -45,8 +46,10 @@ def name_that_shape():
         print("nonagon")
     elif sides == 10:
         print("decagon")
+
+# Display error when inputting integers outside the range
     else:
         print("Error")
 
 
-# name_that_shape()
+name_that_shape()
