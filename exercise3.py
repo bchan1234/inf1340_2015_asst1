@@ -27,6 +27,7 @@ def diagnose_car():
     """
 
     answer = raw_input("Is the car silent when you turn the key? ")
+
     if answer == "y":
         answer = raw_input("Are the battery terminals corroded? ")
         if answer == "y":
@@ -56,7 +57,9 @@ def diagnose_car():
                 if answer == "n":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
+# Add error message when input is not y/n
+                    Ad
 
-
+    return
 
 diagnose_car()
