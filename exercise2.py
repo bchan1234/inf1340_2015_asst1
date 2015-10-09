@@ -53,3 +53,39 @@ def name_that_shape():
 
 
 name_that_shape()
+
+"""
+        Test Case 1
+        Input: 3
+        Output: triangle
+
+        Test Case 2
+        Input: 4
+        Output: quadrilateral
+
+        Test Case 3
+        Input: 5
+        Output: pentagon
+
+        Test Case 4
+        Input: 6
+        Output: hexagon
+
+        Test Case 5
+        Input: 7
+        Output: heptagon
+
+        Test Case 6
+        Input: 8
+        Output: octagon
+
+        Test Case 7
+        Input: 9
+        Output: nonagon
+
+        Test Case 8
+        Input: 10
+        Output: decagon
+
+        Error: Inputs other than the ones listed above will give an "Error" message.
+"""
