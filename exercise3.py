@@ -70,3 +70,91 @@ def diagnose_car():
     return
 
 diagnose_car()
+
+"""
+
+ Test Case 1
+    Input: Y
+    Output: Are the battery terminals corroded?
+    Errors: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: Y
+    Output: Clean terminals and try starting again.
+    Errors: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+
+  Test Case 2
+    Input: Y
+    Output: Are the battery terminals corroded?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Replace cables and try again.
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+
+  Test Case 3
+    Input: N
+    Output : Does the car make a clicking noise?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input : Y
+    Output: Replace the battery.
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+
+  Test Case 4
+    Input: N
+    Output: Does the car make a clicking noise?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Does the car crank up but fail to start?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: Y
+    Output: Check spark plug connections.
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+
+
+  Test Case 5
+    Input: N
+    Output: Does the car make a clicking noise?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Does the car crank up but fail to start?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input:N
+    Output3: Does the engine start and then die?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Engine is not getting enough fuel. Clean fuel pump.
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+
+  Test Case 6
+    Input: N
+    Output: Does the car make a clicking noise?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Does the car crank up but fail to start?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Does the engine start and then die?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: Y
+    Output: Does your car have fuel injection?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Check to ensure the choke is opening and closing.
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+
+  Test Case 7
+    Input: N
+    Output: Does the car make a clicking noise?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Does the car crank up but fail to start?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: N
+    Output: Does the engine start and then die?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: Y
+    Output: Does your car have fuel injection?
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    Input: Y
+    Output: Get it in for service.
+    Error: When input is neither Y or N and it will prompt message "Please input Y/N answer only"
+    """
+
